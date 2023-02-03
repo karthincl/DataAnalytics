@@ -178,7 +178,7 @@ public class IntelligentAnalytics {
         
         System.out.println("Credit cards:\n" + valid_cc + "\nEmails:\n" + valid_emails + "\nPhones:\n" + valid_ph);
          */
-        File f = new File("case1000.xlsx");
+        File f = new File("case1001.xlsx");
         String out = ia.ReadExcel(f);
         System.out.println(out);
 
@@ -187,6 +187,7 @@ public class IntelligentAnalytics {
 
     public String ReadExcel(File file) {
         String out = "";
+        
 
         try {
 
@@ -239,6 +240,9 @@ public class IntelligentAnalytics {
                     //  System.out.println("");
                 }
             }//all tbls
+            
+            
+            
             System.out.println(out);
 
             
